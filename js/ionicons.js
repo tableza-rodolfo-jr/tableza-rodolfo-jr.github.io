@@ -1,0 +1,1 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.3/esm/ionicons.min.js" integrity="sha512-yvefMpqlYCpHgveijhRrO36/NQlRdasaGIMXXqxTw0gNrQcMNrCf89/UOXcrNAZgAoPs1cHGA9o9Fk7MfxdC8w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
