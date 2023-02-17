@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css/family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,14 +6,23 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 } 
+body {
+    overflow-x: hidden !important;
+}
+
 p {
     font-weight: 300;
     color: #111;
     
 }
 #logo {
-    height: 100px;
-    width: 300px;
+   
+    height: 80px;
+    width: 80px;
+}
+.h2-class {
+    text-transform: uppercase;
+    color: #fff;
 }
 
 
@@ -106,6 +115,84 @@ header .navigation li a:hover{
     color: #3001ff;
 }
 /* about US section */
+.about-img {
+    width: 800px;
+    height: 253px;
+  }
+ 
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+#about {
+    padding: 20px 40px;
+}
+  
+/* about us */
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper>*{
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+}
+#footer-wrapper {
+    background-color: #48487f;
+    color: #FFF;
+}
+#footer-wrapper p {
+    background-color: #48487f;
+    color: #FFF;
+}
+#footer-wrapper a {
+    background-color: #48487f;
+    color: #FFF;
+}
+
+
+body {
+    
+    overflow-x: hidden;
+} 
+@media all and (min-width: 800px) {
+
+
+ .aside1 {
+    order: 1;
+ }
+ .aside2{
+    order: 2;
+ }
+ .aside2{
+    order: 3;
+ }
+
+}
+
+@media all and (min-width: 600px){
+
+
+.aside {
+    flex: 1;
+}
+
+}
+
+
+
+
+/* about us */
 
 section{
     padding: 100px;
@@ -122,6 +209,7 @@ section{
 }
 
 .titleText {
+    padding-top: 25px;
     color: #111;
     font-size: 2em;
     font-weight: 300;
@@ -348,36 +436,38 @@ section{
 }
 
 /* End of Testimonials */
-.contact {
-    position: relative;
-}
-.main-div-flex {
-    display: flex;
-    height: auto;
-    justify-content: space-around;
-}
-.contactForm {
-    align-items: left;
+
+  /* .contactForm {
+    margin-left: 90px;
+    align-items: center;
     padding: 75px 150px;
     background: #fff;
     box-shadow: 0 15px 50px rgba(0,0,0,0.1);
     max-width: 500px;
     margin-top: 50px;
+} */
+.latest_contact {
+    padding: 70px 150px;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin-top: 70px;
 }
-.contactForm h3 {
+
+.latest_contact h3 {
     color: #111;
     font-size: 1.2em;
     margin-bottom: 20px;
     font-weight: 500;
 }
-.contactForm .inputBox {
-    position: relative;
+.latest_contact .inputBox {
     width: 100%;
     margin-bottom: 20px;
     width: 200px;
 }
-.contactForm .inputBox input,
-.contactForm .inputBox textarea {
+.latest_contact .inputBox input,
+.latest_contact .inputBox textarea {
     width: 100%;
     border: 1px solid #555;
     padding: 10px;
@@ -387,11 +477,10 @@ section{
     font-weight: 300;
     resize: none;
 }
-.contactForm .inputBox input[type="submit"]{
+.latest_contact .inputBox input[type="submit"]{
     font-size: 1em;
     color: #fff;
     background: #48487f;
-    display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
@@ -400,12 +489,75 @@ section{
     font-weight: 500;
     border: none;
     cursor: pointer;
+}  
+ /* .contact-section {
+    padding: 75px 150px;
+    background-color: rgb(233, 228, 228);
+    max-width: 1140px;
+    box-shadow: 5px 10px #dfdede;
 }
+.contact-section > form > div {
+    padding-top: 20px;
+}
+#btn-form {
+    margin-top: 5px 0 5px 0;
+    font-weight: bold;
+    padding: 10px 20px;
+}  */
+
+/* .contactkuno {
+    margin-left: 90px;
+    align-items: center;
+    padding: 75px 150px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+.contactkuno h3 {
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactkuno .inputBox {
+    width: 100%;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+.contactkuno .inputBox input,
+.contactkuno .inputBox textarea {
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+.contactkuno .inputBox input[type="submit"]{
+    font-size: 1em;
+    color: #fff;
+    background: #48487f;
+   
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}   */
+
+
+
 
  /* copyrightt */
 .copyrightText {
     height: 32vh;
-    background-color: #48487f;
+ 
      display: flex;
      justify-content: space-around;
      padding-top: 30px;
@@ -432,15 +584,12 @@ section{
    font-weight: 600;
    letter-spacing: 0.1px;
 }
-.copyrightText a {
-    color: #fff;
-  padding: 10px 20px
-}
-.copyrightText a i {
+
+.wrapper a i {
     font-size: 35px;
 }
-.copyright {
-    margin-top: -300px;
+.facebook-icon {
+    padding: 10px 40px;
 }
 
 
@@ -544,12 +693,5 @@ section{
         padding: 35px 40px;
         margin-top: 20px;
         margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 480px){
-    .banner .content h2 {
-        font-size: 2.2em;
-        color: #111;
     }
 }
