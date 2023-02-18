@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css/family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,14 +6,23 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 } 
+body {
+    overflow-x: hidden !important;
+}
+
 p {
     font-weight: 300;
     color: #111;
     
 }
 #logo {
-    height: 100px;
-    width: 300px;
+   
+    height: 80px;
+    width: 80px;
+}
+.h2-class {
+    text-transform: uppercase;
+    color: #fff;
 }
 
 
@@ -24,7 +33,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background:url(../img2/team2.jpg);
+    background:url(../img2/team.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -42,18 +51,20 @@ p {
 }
 .btn{
     font-size: 1em;
-    color: #fff;
-    background: #3001ff;
+    color: #fff !important;
+    background-color: #3001ff !important;
     display: inline-block;
     padding: 10px 30px;
     margin-top: 20px;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
-    transition: 0.5s;
+    transition: ease-in-out 0.3s;
 }
-.btn:hover{
+.btn:hover{  
+    animation-delay: 250ms;
     letter-spacing: 6px;
+    
 }
 header{
     position: fixed;
@@ -106,6 +117,88 @@ header .navigation li a:hover{
     color: #3001ff;
 }
 /* about US section */
+.about-img {
+    width: 100%;
+   height: auto;
+  }
+ 
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+#about {
+    padding: 20px 40px;
+}
+  
+/* about us */
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+video {
+    width: 100%;
+    height: 70vh;
+  }
+
+.wrapper>*{
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+}
+#footer-wrapper {
+    background-color: #48487f;
+    color: #FFF;
+}
+#footer-wrapper p {
+    background-color: #48487f;
+    color: #FFF;
+}
+#footer-wrapper a {
+    background-color: #48487f;
+    color: #FFF;
+}
+
+
+body {
+    
+    overflow-x: hidden;
+} 
+@media all and (min-width: 800px) {
+
+
+ .aside1 {
+    order: 1;
+ }
+ .aside2{
+    order: 2;
+ }
+ .aside2{
+    order: 3;
+ }
+
+}
+
+@media all and (min-width: 600px){
+
+
+.aside {
+    flex: 1;
+}
+
+}
+
+
+
+
+/* about us */
 
 section{
     padding: 100px;
@@ -122,6 +215,7 @@ section{
 }
 
 .titleText {
+    padding-top: 25px;
     color: #111;
     font-size: 2em;
     font-weight: 300;
@@ -347,100 +441,99 @@ section{
     font-weight: 600;
 }
 
-/* End of Testimonials */
-.contact {
-    position: relative;
-}
-.main-div-flex {
-    display: flex;
+
+
+.contact-in {
+    width: 80%;
     height: auto;
-    justify-content: space-around;
-}
-.contactForm {
-    align-items: left;
-    padding: 75px 150px;
-    background: #fff;
-    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
-    max-width: 500px;
-    margin-top: 50px;
-}
-.contactForm h3 {
-    color: #111;
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    font-weight: 500;
-}
-.contactForm .inputBox {
-    position: relative;
-    width: 100%;
-    margin-bottom: 20px;
-    width: 200px;
-}
-.contactForm .inputBox input,
-.contactForm .inputBox textarea {
-    width: 100%;
-    border: 1px solid #555;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
     padding: 10px;
-    color: #111;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px #666;
+   }
+   .contact-map {
+    width: 100%;
+    height: auto;
+    flex: 50%;
+   }
+   .contact-map iframe{
+    width: 100%;
+    height: 100%;
+   }
+   .contact-form {
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    padding: 30px;
+    text-align: center;
+   }
+  
+   .contact-form h1 {
+    margin-bottom: 10px;
+   }
+  
+   .contact-form-txt {
+     width: 100%;
+     height: 40px;
+     color: #000;
+     border: 1px solid #bcbcbc;
+     outline: none;
+     margin-bottom: 20px;
+     padding: 15px;
+   }
+   .contact-form-txt::placeholder {
+    color: #aaa;
+   }
+   .contact-form-textarea {
+    width: 100%;
+    height: 130px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+  
     outline: none;
-    font-size: 16px;
-    font-weight: 300;
-    resize: none;
-}
-.contactForm .inputBox input[type="submit"]{
-    font-size: 1em;
-    color: #fff;
-    background: #48487f;
-    display: inline-block;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    transition: 0.5s;
-    max-width: 100px;
-    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+  .contact-form-textarea::placeholder {
+    color: #aaa;
+  }
+  .contact-form-btn {
+    width: 20%;
     border: none;
+    outline: none;
+    background: #8e2de2;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 0;
     cursor: pointer;
-}
+    font-size: 18px;
+  }
+  .contact-form-btn:hover{
+     color: black;
+     background-color: transparent;
+     transform: scale(1.1);
+     transition: ease-in-out 0.3s;
+  }
+
 
  /* copyrightt */
-.copyrightText {
-    height: 32vh;
-    background-color: #48487f;
-     display: flex;
-     justify-content: space-around;
-     padding-top: 30px;
-     color: #fff;
-}
-.copyrightText h1:hover {
-    color: gray;
-}
-.copyrightText p{
-    color: #fff;
-    cursor: pointer;
-}
-.copyrightText div {
-    position: relative;
-}
-.copyrightText div h1 {
-    position: relative;
-    text-align: center;
-}
-.copyrightText .copy-text {
+
+ .copy-text {
     transition: 0.5s ease-in;
 }
-.copyrightText .copy-text:hover {
+ .copy-text:hover {
    font-weight: 600;
-   letter-spacing: 0.1px;
+   letter-spacing: 2px;
+   cursor: pointer;
 }
-.copyrightText a {
-    color: #fff;
-  padding: 10px 20px
-}
-.copyrightText a i {
+
+.wrapper a i {
     font-size: 35px;
 }
-.copyright {
-    margin-top: -300px;
+.facebook-icon {
+    padding: 10px 40px;
 }
 
 
@@ -448,6 +541,14 @@ section{
 
 /* media queries */
 
+@media (max-width: 567px){
+/*  */
+.menuToggle {
+
+   margin-left: -70px;
+}
+
+}
 @media (max-width: 991px){
     header,
     header.sticky {
@@ -479,6 +580,7 @@ section{
        
     }
     .menuToggle {
+        margin-left: 30px;
         position: relative;
         width: 40px;
         height: 40px;
@@ -544,12 +646,5 @@ section{
         padding: 35px 40px;
         margin-top: 20px;
         margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 480px){
-    .banner .content h2 {
-        font-size: 2.2em;
-        color: #111;
     }
 }
