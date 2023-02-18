@@ -339,14 +339,6 @@ section{
 
 
 
-
-
-
-
-
-
-
-
   /* insects */
 
 /* Expert Section */
@@ -500,7 +492,7 @@ section{
     color: #aaa;
   }
   .contact-form-btn {
-    width: 20%;
+    width: 55%;
     border: none;
     outline: none;
     background: #8e2de2;
@@ -536,20 +528,19 @@ section{
     padding: 10px 40px;
 }
 
-
-
+@media (max-width: 576px){
+  .menuToggle {
+    margin-left: -140px;
+  }
+#logo {
+    display: none;
+}
+   
+}
 
 /* media queries */
-
-@media (max-width: 567px){
-/*  */
-.menuToggle {
-
-   margin-left: -70px;
-}
-
-}
 @media (max-width: 991px){
+    
     header,
     header.sticky {
         padding: 10px 20px;
@@ -580,7 +571,7 @@ section{
        
     }
     .menuToggle {
-        margin-left: 30px;
+        margin-left: 220px;
         position: relative;
         width: 40px;
         height: 40px;
@@ -599,6 +590,9 @@ section{
     header.sticky .menuToggle {
         filter: invert(1);
     }
+
+
+
     section {
         padding: 20px;
     }
