@@ -42,6 +42,10 @@
 
 html {
   scroll-behavior: smooth;
+
+}
+.nav__icon{
+  font-size: 1.2rem;
 }
 
 body {
@@ -51,7 +55,9 @@ body {
   font-size: var(--normal-font-size);
   color: var(--second-color);
 }
-
+a {
+  text-decoration: none !important;
+}
 h1, h2, p {
   margin: 0;
 }
@@ -304,7 +310,10 @@ img {
   margin-right: var(--mb-2);
   color: var(--first-color);
 }
-
+.skills__icon2 {
+  margin-right: var(--mb-2);
+  color: var(--first-color);
+}
 .skills__names {
   display: flex;
   align-items: center;
@@ -321,20 +330,32 @@ img {
 }
 
 .skills__html {
-  width: 95%;
+  width: 80%;
 }
 
 .skills__css {
-  width: 85%;
+  width: 80%;
 }
 
-.skills__js {
+.skills__laravel {
+  width: 70%;
+}
+.skills__react {
+  width: 70%;
+}
+.skills__node {
+  width: 80%;
+}
+.skills__php {
+  width: 70%;
+}
+.skills__api {
   width: 65%;
 }
-
-.skills__ux {
-  width: 85%;
+.skills__mysql {
+  width: 70%;
 }
+
 
 .skills__img {
   border-radius: .5rem;
@@ -461,6 +482,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+
   body {
     margin: 0;
   }
@@ -492,6 +514,7 @@ img {
   .nav__link {
     color: var(--second-color);
   }
+
   .home {
     padding: 8rem 0 2rem;
   }
@@ -518,10 +541,12 @@ img {
 }
 
 @media screen and (min-width: 992px) {
+ 
   .bd-grid {
     margin-left: auto;
     margin-right: auto;
   }
+ 
   .home {
     padding: 10rem 0 2rem;
   }
